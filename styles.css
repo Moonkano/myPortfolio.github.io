@@ -5,10 +5,18 @@
 }
 
 header{
-    width: 100%;
+    display:flex;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(187, 205, 220);
-    padding-bottom: 5px;
+    padding: 10px 30px;
+
+    position: sticky;
+    top:0;
+}
+
+.logo img{
+    width: 40px;
 }
 
 h1{
@@ -18,12 +26,25 @@ h1{
 header h1{
     text-align: center;
     color:rgb(104, 10, 34);
+    flex: 1;
+    font: 50px "Helvetica";
 }
 
 .nav{
     display: flex;
-    justify-content: space-around;
+    gap: 40px;
     list-style-type: none;
+}
+
+.socials{
+    padding-left: 30px;
+    display:flex;
+    gap: 20px;
+}
+
+.socials img{
+    width: 30px;
+    height: 40px;
 }
 
 .nav a{
@@ -47,8 +68,17 @@ a:hover{
 }
 
 .content{
-    width:100%
+    width:100%;
+    padding-left: 30px;
+    padding-bottom: 57px;
+    background-image: url(images/icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.list-aboutme{
+    list-style-type: lower-roman
 }
 
 footer{
@@ -57,4 +87,14 @@ footer{
     bottom: 0;
     background-color:rgb(198, 217, 211);
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.home-image{
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: rgb(106, 7, 7);
 }
