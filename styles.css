@@ -8,7 +8,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(187, 205, 220);
+    background-color: rgb(235, 186, 235);
     padding: 10px 30px;
 
     position: sticky;
@@ -25,7 +25,7 @@ h1{
 
 header h1{
     text-align: center;
-    color:rgb(104, 10, 34);
+    color:rgb(150, 113, 167);
     flex: 1;
     font: 50px "Helvetica";
 }
@@ -48,11 +48,11 @@ header h1{
 }
 
 .nav a{
-    color:rgb(251, 77, 94);
+    color:rgb(80, 66, 94);
 }
 
 .current{
-    color:rgb(213, 232, 232);
+    color:rgb(186, 198, 242);
 }
 
 a:link{
@@ -71,7 +71,7 @@ a:hover{
     width:100%;
     padding-left: 30px;
     padding-bottom: 57px;
-    background-image: url(images/icon.png);
+    background-image: url(images/pastel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ footer{
     width:100%;
     position: fixed;
     bottom: 0;
-    background-color:rgb(198, 217, 211);
+    background-color:rgb(199, 242, 238);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -96,10 +96,60 @@ footer{
     border-style: dotted;
     border-width: 2px;
     border-radius: 15px;
-    border-color: rgb(106, 7, 7);
+    border-color: rgb(75, 25, 238);
 }
 
-.illustrations{
-    width: 50px;
-    height: 50px;
+.illustrations img{
+    padding-bottom:5%;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex; 
+    flex-direction: row; /*this is like a box layout. it'll put it in a row*/
+    flex-wrap:wrap; /*decides if the rows will wrap around to the next line or get compressed*/
+    justify-content: center;
+    gap: 35px; /*Creates a gap between the links*/
+    font-size:50px;
+}
+
+#artButton {
+position:relative; /*Allows you to position something relative to its original position*/
+overflow:hidden; /*Hides information that cannot be displayed/fitted in*/
+cursor:pointer; /*Determines what your cursor is when hovering over it*/
+}
+
+#artButton a{
+    position:relative;
+    transition: all .35s ease-Out; /*it's a transition. eases the old value into the new value*/
+}
+
+#slide {
+    width: 100%;
+    height:100%;
+    left:-500px; /*this is to hide it*/
+    background: #ebe5f0;
+    position:absolute;
+    transition: all .35s ease-Out;
+    bottom: 0;
+}
+
+#artButton:hover #slide {
+    left: 0; /*this initiates the slide effect by adjusting the left*/
+}
+
+#artButton:hover a{
+    color: #2DC142 /*turns the text green*/
+}
+
+.music-centered {
+    text-align: center;
+    padding-top: 20px;
 }
