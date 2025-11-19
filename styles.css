@@ -180,8 +180,12 @@ cursor:pointer; /*Determines what your cursor is when hovering over it*/
 
 .project-table td, .project-table th {
     border:1px dashed black;
-    padding: 3px;
+    padding: 1px;
     text-align: center;
+}
+
+.project-table td img{
+    width: 100%;
 }
 
 .content form{
